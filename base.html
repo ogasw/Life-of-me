@@ -1,0 +1,16 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>LoveConnect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to LoveConnect!</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Log In</a>
+    </nav>
+    <div>{% block content %}{% endblock %}</div>
+</body>
+</html>
